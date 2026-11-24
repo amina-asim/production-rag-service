@@ -42,8 +42,17 @@ The system retrieves relevant document passages, generates grounded answers usin
 
 
 
-\*\*Interface:\*\* FastAPI Swagger UI is available at `/docs`. A separate HTML/CSS frontend is not yet implemented.
+\*\*Interface:\*\* FastAPI Swagger UI is available at `/docs`.
+A responsive HTML/CSS/JavaScript frontend is available at `/ui`.
 
+The frontend supports:
+- PDF and DOCX document uploads
+- Asking questions about indexed documents
+- Viewing generated answers and retrieved source details
+- Browsing the document library
+- Deleting documents and their indexed chunks
+
+FastAPI Swagger documentation is available at `/docs`.
 
 
 \## Technology Stack

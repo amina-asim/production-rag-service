@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #6257e8;
+    --primary-dark: #5045cf;
+    --background: #f6f7fb;
+    --surface: #ffffff;
+    --text: #202238;
+    --muted: #777b91;
+    --border: #e8e9f1;
+    --success: #21966c;
+    --danger: #d64c5c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+}
+
+button, textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.app-shell {
+    min-height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 255px;
+    min-height: 100vh;
+    background: #fff;
+    border-right: 1px solid var(--border);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 55px;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    background: var(--primary);
+    color: white;
+    border-radius: 13px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.brand h2 {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+}
+
+.brand p {
+    margin: 3px 0 0;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.sidebar-label, .eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+}
+
+.sidebar-label {
+    margin: 0 0 15px 10px;
+}
+
+.nav-item {
+    border: 0;
+    background: transparent;
+    color: #656980;
+    padding: 14px;
+    text-align: left;
+    border-radius: 9px;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.nav-item:hover, .nav-item.active {
+    background: #f0efff;
+    color: var(--primary);
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #24aa79;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar {
+    min-height: 105px;
+    padding: 22px 5%;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar .eyebrow {
+    margin: 0 0 7px;
+}
+
+.topbar h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 23px;
+    margin: 0;
+}
+
+.api-label {
+    color: var(--success);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.content-area {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 45px 35px;
+}
+
+.welcome {
+    text-align: center;
+    margin: 10px auto 35px;
+    max-width: 600px;
+}
+
+.welcome-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 17px;
+    display: grid;
+    place-items: center;
+    background: #eeedff;
+    color: var(--primary);
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+.welcome h2, .section-heading h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 27px;
+    margin: 0 0 12px;
+}
+
+.welcome p, .section-heading p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.upload-card, .question-card, .answer-area {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 23px;
+    margin-bottom: 20px;
+}
+
+.upload-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.upload-card h3, .answer-area h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+}
+
+.upload-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.upload-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.primary-button, .secondary-button {
+    border: 0;
+    border-radius: 9px;
+    padding: 12px 17px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.primary-button {
+    background: var(--primary);
+    color: white;
+}
+
+.primary-button:hover {
+    background: var(--primary-dark);
+}
+
+.secondary-button {
+    background: #eeedff;
+    color: var(--primary);
+}
+
+.question-card label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    margin-bottom: 15px;
+    color: var(--muted);
+}
+
+.question-card textarea {
+    width: 100%;
+    resize: vertical;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+    color: var(--text);
+    min-height: 95px;
+}
+
+.question-card textarea:focus {
+    border-color: var(--primary);
+}
+
+.question-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.question-footer span {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.message {
+    width: 100%;
+    margin-top: 8px !important;
+}
+
+.answer-text {
+    line-height: 1.8;
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.source-card, .document-item {
+    background: #fafaff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.source-card strong {
+    color: var(--primary);
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.document-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background: white;
+}
+
+.document-item p {
+    margin: 5px 0 0;
+    color: var(--muted);
+}
+
+.delete-button {
+    border: 1px solid #f0d5d9;
+    background: #fff7f8;
+    color: var(--danger);
+    border-radius: 8px;
+    padding: 9px 12px;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 750px) {
+    .sidebar {
+        width: 75px;
+        padding: 20px 10px;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    .brand > div:last-child,
+    .sidebar-label,
+    .nav-item {
+        font-size: 0;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .sidebar-footer {
+        font-size: 0;
+        justify-content: center;
+    }
+
+    .content-area {
+        padding: 30px 18px;
+    }
+
+    .topbar {
+        padding: 20px;
+    }
+
+    .upload-card, .question-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .upload-controls {
+        flex-wrap: wrap;
+    }
+}

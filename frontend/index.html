@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowledgeDesk | Document Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">K</div>
+                <div>
+                    <h2>KnowledgeDesk</h2>
+                    <p>Document Intelligence</p>
+                </div>
+            </div>
+
+            <div class="sidebar-label">WORKSPACE</div>
+            <button class="nav-item active" id="nav-chat">◈ &nbsp; Ask Documents</button>
+            <button class="nav-item" id="nav-library">▤ &nbsp; Document Library</button>
+
+            <div class="sidebar-footer">
+                <span class="status-dot"></span>
+                <span id="connection-status">Checking API...</span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">YOUR KNOWLEDGE WORKSPACE</p>
+                    <h1>Document Assistant</h1>
+                </div>
+                <div class="api-label">
+                    <span class="status-dot"></span> RAG SERVICE
+                </div>
+            </header>
+
+            <section class="content-area" id="chat-section">
+                <div class="welcome">
+                    <div class="welcome-icon">✦</div>
+                    <h2>Ask your documents anything.</h2>
+                    <p>Upload your research papers and documents, then ask questions. Answers are generated using retrieved document context.</p>
+                </div>
+
+                <div class="upload-card">
+                    <div>
+                        <h3>Upload documents</h3>
+                        <p>PDF and DOCX files · Maximum 20 MB</p>
+                    </div>
+                    <div class="upload-controls">
+                        <input type="file" id="file-input" accept=".pdf,.docx">
+                        <button class="primary-button" id="upload-button">＋ Upload file</button>
+                    </div>
+                    <p id="upload-message" class="message"></p>
+                </div>
+
+                <div class="question-card">
+                    <label for="question-input">YOUR QUESTION</label>
+                    <textarea id="question-input" rows="3" maxlength="2000"
+                        placeholder="For example: What are the applications of deep learning?"></textarea>
+                    <div class="question-footer">
+                        <span>Answers are grounded in your uploaded documents.</span>
+                        <button class="primary-button" id="ask-button">Ask question →</button>
+                    </div>
+                </div>
+
+                <div id="answer-area" class="answer-area hidden">
+                    <h3>Answer</h3>
+                    <div id="answer-text" class="answer-text"></div>
+                    <div id="sources-area"></div>
+                </div>
+            </section>
+
+            <section class="content-area hidden" id="library-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">YOUR KNOWLEDGE BASE</p>
+                        <h2>Document Library</h2>
+                        <p>Manage the documents available to your RAG assistant.</p>
+                    </div>
+                    <button class="secondary-button" id="refresh-button">↻ Refresh</button>
+                </div>
+
+                <div id="document-list" class="document-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

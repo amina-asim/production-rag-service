@@ -1,4 +1,4 @@
-
+from fastapi.staticfiles import StaticFiles
 import hashlib
 import logging
 from pathlib import Path
@@ -209,3 +209,8 @@ def ask_question(request: QuestionRequest):
             status_code=500,
             detail="Unable to process the question."
         )
+app.mount(
+    "/ui",
+    StaticFiles(directory="frontend", html=True),
+    name="frontend"
+)
