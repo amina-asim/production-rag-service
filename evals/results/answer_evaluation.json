@@ -1,0 +1,751 @@
+[
+    {
+        "id": 1,
+        "category": "answerable",
+        "question": "Why is regularization used in machine learning models?",
+        "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+        "id": 2,
+        "category": "answerable",
+        "question": "What happens when the regularization hyperparameter alpha is set to zero?",
+        "expected_answer": "Setting alpha to zero results in no regularization.",
+        "generated_answer": "I could not find relevant information in the uploaded documents.",
+        "returned_sources": [],
+        "cited_sources": [],
+        "refused": true,
+        "has_citation": false,
+        "valid_citations": false,
+        "relevant_citation": false,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 3,
+        "category": "answerable",
+        "question": "How does L1 regularization contribute to the gradient?",
+        "expected_answer": "Its contribution is a constant factor whose sign depends on the corresponding weight, rather than scaling linearly with each weight.",
+        "generated_answer": "Based on the provided documents, the contribution of L1 regularization to the gradient no longer scales linearly with each $w_i$; instead, it is a constant factor with a sign equal to $\\text{sign}(w_i)$ [Source ID: 1].",
+        "returned_sources": [
+            {
+                "filename": "Deep+Learning+Ian+Goodfellow.pdf",
+                "page": 251,
+                "distance": 0.40715229511260986
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 54,
+                "distance": 0.4308507442474365
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 211,
+                "distance": 0.5151285529136658
+            },
+            {
+                "filename": "Deep+Learning+Ian+Goodfellow.pdf",
+                "page": 286,
+                "distance": 0.5190445780754089
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "Deep+Learning+Ian+Goodfellow.pdf",
+                "page": 251
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 4,
+        "category": "answerable",
+        "question": "What is the purpose of the parameter norm penalty in a regularized objective function?",
+        "expected_answer": "It limits the capacity of a model by adding a penalty term to the original objective function.",
+        "generated_answer": "I could not find relevant information in the uploaded documents.",
+        "returned_sources": [],
+        "cited_sources": [],
+        "refused": true,
+        "has_citation": false,
+        "valid_citations": false,
+        "relevant_citation": false,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 5,
+        "category": "answerable",
+        "question": "What limitations of capsule networks are mentioned in the book?",
+        "expected_answer": "Capsule networks are more complex and more difficult to train than the alternative discussed.",
+        "generated_answer": "I could not find relevant information in the uploaded documents.",
+        "returned_sources": [],
+        "cited_sources": [],
+        "refused": true,
+        "has_citation": false,
+        "valid_citations": false,
+        "relevant_citation": false,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 6,
+        "category": "answerable",
+        "question": "What is the relationship between deep learning and neural networks?",
+        "expected_answer": "Deep learning is a subfield of machine learning that uses deep neural network architectures.",
+        "generated_answer": "Based on the provided documents, neural networks are the building blocks of deep learning [Source ID: 4]. Deep learning focuses on neural networks and algorithms for training them [Source ID: 3], relying on the perceptron as the basis of neural networks [Source ID: 1].",
+        "returned_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 38,
+                "distance": 0.3633843660354614
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 122,
+                "distance": 0.3661240339279175
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 117,
+                "distance": 0.3925785422325134
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 3,
+                "distance": 0.4080479145050049
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 38
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 117
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 3
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 7,
+        "category": "answerable",
+        "question": "Which architectures are given as examples of deep neural networks?",
+        "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+    },
+    {
+        "id": 8,
+        "category": "answerable",
+        "question": "What kinds of tasks are convolutional neural networks suited for?",
+        "expected_answer": "CNNs are suited to image classification and can also be used in audio and natural language processing.",
+        "generated_answer": "Convolutional neural networks (CNNs) are suited for image classification, as well as audio and text processing (or NLP, which stands for Natural Language Processing) [Source ID: 3, Source ID: 4].",
+        "returned_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 120,
+                "distance": 0.3447471857070923
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 38,
+                "distance": 0.43581151962280273
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 84,
+                "distance": 0.44012367725372314
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 132,
+                "distance": 0.44158756732940674
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 84
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 132
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 9,
+        "category": "answerable",
+        "question": "Which neural network architectures are being explored for identifying different types of sounds?",
+        "expected_answer": "CNNs are used for sound identification, while some companies are exploring RNNs and LSTMs.",
+        "generated_answer": "Based on the provided documents, companies use CNNs (Convolutional Neural Networks) to identify different types of sounds, while other companies are exploring the use of RNNs (Recurrent Neural Networks) and LSTMs (Long Short-Term Memory networks) instead of CNNs [Source ID: 1].",
+        "returned_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 145,
+                "distance": 0.37580054998397827
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 144,
+                "distance": 0.46522849798202515
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 132,
+                "distance": 0.4797070622444153
+            },
+            {
+                "filename": "Deep+Learning+Ian+Goodfellow.pdf",
+                "page": 759,
+                "distance": 0.5158678293228149
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 145
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 10,
+        "category": "answerable",
+        "question": "How is AI used in healthcare according to the research paper?",
+        "expected_answer": "Healthcare applications include disease prediction, personalized treatment, and robotic surgeries.",
+        "generated_answer": "According to the research paper, AI is used in healthcare for disease prediction, personalized treatment, and robotic surgeries [Source ID: 1].",
+        "returned_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 2,
+                "distance": 0.4035801887512207
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 20,
+                "distance": 0.43324774503707886
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 26,
+                "distance": 0.4365272521972656
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 23,
+                "distance": 0.43847084045410156
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 2
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 11,
+        "category": "answerable",
+        "question": "What are two financial applications of AI and machine learning mentioned in the research paper?",
+        "expected_answer": "Fraud detection systems and automated trading.",
+        "generated_answer": "Based on the provided documents, two financial applications of AI and machine learning are:\n\n1. Fraud detection systems [Source ID: 1]\n2. Automated trading [Source ID: 1]",
+        "returned_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 2,
+                "distance": 0.39719194173812866
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 1,
+                "distance": 0.4125562906265259
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 6,
+                "distance": 0.4351138472557068
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 38,
+                "distance": 0.45314884185791016
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 2
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 12,
+        "category": "answerable",
+        "question": "How are AI technologies used in education and industry?",
+        "expected_answer": "Educational platforms use AI for personalized learning paths, while industries use it to optimize supply chains, automate manufacturing, and improve customer service.",
+        "generated_answer": "Based on the provided documents, AI technologies are used in education and industry in the following ways:\n\n* **Education:** Educational platforms employ artificial intelligence to provide personalized learning paths [Source ID: 2].\n* **Industry:** Industries use AI to optimize supply chains, automate manufacturing, and enhance customer service [Source ID: 2].",
+        "returned_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 23,
+                "distance": 0.4398229122161865
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 2,
+                "distance": 0.45664793252944946
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 41,
+                "distance": 0.46163100004196167
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 6,
+                "distance": 0.4628940224647522
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 2
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 13,
+        "category": "answerable",
+        "question": "How does the book define machine learning at a high level?",
+        "expected_answer": "Machine learning is a subset of AI that can solve tasks that are infeasible or too cumbersome with traditional programming languages.",
+        "generated_answer": "At a high level, machine learning is defined as a subset of AI that can solve tasks that are infeasible or too cumbersome with \"traditional\" programming languages [Source ID: 3].",
+        "returned_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 20,
+                "distance": 0.3953321576118469
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 9,
+                "distance": 0.4085961580276489
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 43,
+                "distance": 0.4089587926864624
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 3,
+                "distance": 0.41525787115097046
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 43
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 14,
+        "category": "answerable",
+        "question": "What three main types of machine learning algorithms are listed in the book?",
+        "expected_answer": "Regression, classification, and clustering.",
+        "generated_answer": "Based on the provided documents, the three main types of machine learning algorithms are:\n\n* Regression (e.g., linear regression) [Source ID: 3]\n* Classification (e.g., k-Nearest-Neighbor) [Source ID: 3]\n* Clustering (e.g., kMeans) [Source ID: 3]",
+        "returned_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 38,
+                "distance": 0.3754066228866577
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 9,
+                "distance": 0.38896721601486206
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 45,
+                "distance": 0.4105813503265381
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 82,
+                "distance": 0.4218457341194153
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 45
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 15,
+        "category": "answerable",
+        "question": "What percentage of survey participants were familiar with AI and what percentage were aware of machine learning?",
+        "expected_answer": "76% were familiar with AI, while 58% reported awareness of machine learning.",
+        "generated_answer": "Based on the survey results, 76% of the participants were familiar with Artificial Intelligence (AI), and 58% were aware of Machine Learning (ML) [Source ID: 1, Source ID: 2].",
+        "returned_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 8,
+                "distance": 0.3339722156524658
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 10,
+                "distance": 0.40431880950927734
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 9,
+                "distance": 0.40655672550201416
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 11,
+                "distance": 0.4204050898551941
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 8
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 10
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 16,
+        "category": "answerable",
+        "question": "Explain the difference between L1 regularization and the gradient behavior described for it. How does its contribution depend on the model weights?",
+        "expected_answer": "L1 regularization adds a penalty to the objective function. Its gradient contribution is a constant factor determined by the sign of each weight, rather than scaling linearly with the weight.",
+        "generated_answer": "Based on the provided documents, L1 regularization is related to MAE (Mean Absolute Error, or the absolute value of differences) [Source ID: 1, Source ID: 3], and it is also called LASSO in machine learning [Source ID: 3]. \n\nRegarding its gradient behavior and how its contribution depends on the model weights ($w_i$):\n* **Constant Factor Contribution:** The regularization contribution to the gradient no longer scales linearly with each individual weight $w_i$ [Source ID: 2]. Instead, it is a constant factor whose sign is equal to the sign of $w_i$ (specifically, $\\text{sign}(w_i)$) [Source ID: 2]. \n* **Gradient Equation:** The gradient (or sub-gradient) for L1 regularization includes $\\text{sign}(w)$ applied element-wise [Source ID: 2]:\n  $$\\nabla_w \\tilde{J}_{\\alpha}(X, y; w) = \\text{sign}(w) + \\nabla_w J(X, y; w)$$\n* **Consequence on Solutions:** Because the contribution is a constant factor based on the sign rather than scaling linearly with the magnitude of each weight, L1 regularization does not necessarily lead to clean algebraic solutions to quadratic approximations in the same way that L2 regularization does [Source ID: 2]. Additionally, LASSO can drive values down to zero, which eliminates features from a model (feature selection) [Source ID: 3].",
+        "returned_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 54,
+                "distance": 0.42167359590530396
+            },
+            {
+                "filename": "Deep+Learning+Ian+Goodfellow.pdf",
+                "page": 251,
+                "distance": 0.4393290877342224
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 211,
+                "distance": 0.4971557855606079
+            },
+            {
+                "filename": "Deep+Learning+Ian+Goodfellow.pdf",
+                "page": 248,
+                "distance": 0.5283159017562866
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 54
+            },
+            {
+                "filename": "Deep+Learning+Ian+Goodfellow.pdf",
+                "page": 251
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 211
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 17,
+        "category": "answerable",
+        "question": "A company wants to identify sounds using deep learning. Which architectures does the book discuss for this purpose?",
+        "expected_answer": "CNNs can be used to identify different types of sounds, and RNNs and LSTMs are also being explored for this task.",
+        "generated_answer": "Based on the provided documents, companies use CNNs to identify different types of sounds, while other companies explore the use of RNNs and LSTMs instead of CNNs [Source ID: 1].",
+        "returned_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 145,
+                "distance": 0.3507753014564514
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 11,
+                "distance": 0.3911714553833008
+            },
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 114,
+                "distance": 0.4592965245246887
+            },
+            {
+                "filename": "Deep+Learning+Ian+Goodfellow.pdf",
+                "page": 759,
+                "distance": 0.46903157234191895
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "DL_and_ML.pdf.pdf",
+                "page": 145
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 18,
+        "category": "answerable",
+        "question": "Compare the AI and ML awareness levels in the survey. What does the difference suggest?",
+        "expected_answer": "AI awareness was 76%, compared with 58% for ML. The paper suggests that AI is more familiar because of visible consumer applications, while ML is less recognized because of its technical nature.",
+        "generated_answer": "Based on the survey results, the awareness levels are:\n* **AI Awareness:** 76% of participants were familiar with Artificial Intelligence [Source ID: 3].\n* **ML Awareness:** Only 58% reported awareness of Machine Learning [Source ID: 3].\n\nThis difference indicates a general tendency to associate AI with more visible consumer applications, whereas Machine Learning is often misunderstood or less recognized due to its more technical nature [Source ID: 3].",
+        "returned_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 10,
+                "distance": 0.28531694412231445
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 7,
+                "distance": 0.30743134021759033
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 8,
+                "distance": 0.32589519023895264
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 9,
+                "distance": 0.3864933252334595
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 8
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 19,
+        "category": "answerable",
+        "question": "How did the research study collect information, and what were its primary and secondary research methods?",
+        "expected_answer": "The study used secondary research involving existing literature, government reports, and industry whitepapers, alongside primary research through a structured survey of respondents.",
+        "generated_answer": "I could not find relevant information in the uploaded documents.",
+        "returned_sources": [],
+        "cited_sources": [],
+        "refused": true,
+        "has_citation": false,
+        "valid_citations": false,
+        "relevant_citation": false,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 20,
+        "category": "answerable",
+        "question": "Summarize the survey's findings about AI usage and trust in AI decisions.",
+        "expected_answer": "84% of participants regularly used at least one AI-powered application. Regarding AI decisions, 42% trusted them in routine or low-risk situations, 36% expressed concerns about critical applications, and 22% were unsure or skeptical.",
+        "generated_answer": "Based on the provided document context, the survey's findings regarding AI usage and trust in AI decisions are as follows:\n\n**AI/ML Application Usage:**\n* **Regular Use:** 84% of participants confirmed that they regularly used at least one AI-powered application [Source ID: 1].\n* **Popular Examples of AI Usage:** Virtual assistants (Siri, Google Assistant), recommendation engines (Netflix, Amazon, YouTube), and chatbots (used in banking, e-commerce, and education) [Source ID: 1]. \n* **ML-based Services:** While ML-based services were recognized in tools like Google Photos, language translation, and social media algorithms, only 28% could correctly identify the use of ML in these systems, highlighting a knowledge gap between usage and understanding [Source ID: 1].\n* **Key Findings Summary:** Regular use of AI tools is recorded at 84% [Source ID: 2].\n\n**Trust in AI Decisions:**\n* **General Results:** Results regarding trust in AI-based decision-making were mixed [Source ID: 1].\n* **Conditional Trust:** 42% of respondents trusted AI decisions in routine or low-risk scenarios (such as product recommendations) [Source ID: 1]. This is also summarized as \"42% (conditional trust)\" [Source ID: 2].\n* **Critical Areas:** 36% expressed concern over AI's role in critical areas like healthcare diagnosis or legal systems [Source ID: 1].\n* **Skepticism/Uncertainty:** 22% were unsure or skeptical, citing a lack of transparency and a fear of bias [Source ID: 1].\n* **Most Commonly Cited Concerns:** Data privacy, loss of human control, job displacement due to automation, and algorithmic bias [Source ID: 1].",
+        "returned_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 9,
+                "distance": 0.23975473642349243
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 10,
+                "distance": 0.28256309032440186
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 1,
+                "distance": 0.3318343162536621
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 7,
+                "distance": 0.3477146625518799
+            }
+        ],
+        "cited_sources": [
+            {
+                "filename": "research paper.pdf",
+                "page": 9
+            },
+            {
+                "filename": "research paper.pdf",
+                "page": 10
+            }
+        ],
+        "refused": false,
+        "has_citation": true,
+        "valid_citations": true,
+        "relevant_citation": true,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 21,
+        "category": "unanswerable",
+        "question": "What exact learning rate was used to train the capsule network in the book's experiment?",
+        "expected_answer": "I could not find relevant information in the uploaded documents.",
+        "generated_answer": "I could not find relevant information in the uploaded documents.",
+        "returned_sources": [],
+        "cited_sources": [],
+        "refused": true,
+        "has_citation": false,
+        "valid_citations": false,
+        "relevant_citation": null,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 22,
+        "category": "unanswerable",
+        "question": "What is the current market share of ChatGPT in Pakistan?",
+        "expected_answer": "I could not find relevant information in the uploaded documents.",
+        "generated_answer": "I could not find relevant information in the uploaded documents.",
+        "returned_sources": [],
+        "cited_sources": [],
+        "refused": true,
+        "has_citation": false,
+        "valid_citations": false,
+        "relevant_citation": null,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 23,
+        "category": "unanswerable",
+        "question": "Which specific hospital in Islamabad currently uses an AI-powered diagnostic system?",
+        "expected_answer": "I could not find relevant information in the uploaded documents.",
+        "generated_answer": "I could not find relevant information in the uploaded documents.",
+        "returned_sources": [],
+        "cited_sources": [],
+        "refused": true,
+        "has_citation": false,
+        "valid_citations": false,
+        "relevant_citation": null,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 24,
+        "category": "unanswerable",
+        "question": "What exact mathematical architecture and routing-by-agreement equations were used in the capsule network implementation?",
+        "expected_answer": "I could not find relevant information in the uploaded documents.",
+        "generated_answer": "I could not find relevant information in the uploaded documents.",
+        "returned_sources": [],
+        "cited_sources": [],
+        "refused": true,
+        "has_citation": false,
+        "valid_citations": false,
+        "relevant_citation": null,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    },
+    {
+        "id": 25,
+        "category": "unanswerable",
+        "question": "What was the individual age, name, and occupation of each of the 50 survey participants?",
+        "expected_answer": "I could not find relevant information in the uploaded documents.",
+        "generated_answer": "I could not find relevant information in the uploaded documents.",
+        "returned_sources": [],
+        "cited_sources": [],
+        "refused": true,
+        "has_citation": false,
+        "valid_citations": false,
+        "relevant_citation": null,
+        "manual_correctness_score": null,
+        "manual_faithfulness_score": null
+    }
+]

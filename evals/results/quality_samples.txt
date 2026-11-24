@@ -1,0 +1,508 @@
+QUALITY-FILTERED CORPUS SAMPLES
+Total indexed chunks: 4428
+
+============================================================
+DOCUMENT: DL_and_ML.pdf.pdf
+QUALIFYING CHUNKS: 1376
+
+------------------------------------------------------------
+CHUNK ID: chunk_2587
+PAGE: 3
+CHUNK POSITION: 0
+------------------------------------------------------------
+LICENSE, DISCLAIMER OF LIABILITY, AND LIMITED WARRANTY
+By purchasing or using this book and its companion files (the “Work”), you agree that 
+this license grants permission to use the contents contained herein, but does not give 
+you the right of ownership to any of the textual content in the book or ownership to 
+any of the information, files, or products contained in it. This license does not permit 
+uploading of the Work onto the Internet or on a network (of any kind) without the 
+written consent of the Publisher. Duplication or dissemination of any text, code, simu-
+lations, images, etc. contained herein is limited to and subject to licensing terms for 
+the respective products, and permission must be obtained from the Publisher or the
+
+------------------------------------------------------------
+CHUNK ID: chunk_2704
+PAGE: 43
+CHUNK POSITION: 2
+------------------------------------------------------------
+data, irrelevant data, duplicate data values, and so forth. Later in this chap-
+ter you will see techniques that address many of these data-related issues.
+If you are unfamiliar with machine learning terminology, a dataset is 
+a collection of data values, which can be in the form of a CSV file or a 
+spreadsheet. Each column is called a feature, and each row is a datapoint 
+that contains a set of specific values for each feature. If a dataset contains 
+information about customers, then each row pertains to a specific customer.
+Types of Machine Learning
+There are three main types of machine learning (combinations of these are 
+also possible) that you will encounter:
+•	 Supervised learning
+•	 Unsupervised learning
+•	 Semi-supervised learning
+
+------------------------------------------------------------
+CHUNK ID: b258d341c5c914eacb8015c592a59a4039021e30f188ed2374a94ca6c674c34c_244
+PAGE: 89
+CHUNK POSITION: 244
+------------------------------------------------------------
+70 • ArtificiAl intelligence, MAchine leArning, Deep leArning
+As you can see, the points [-1,-1] and [2,2] are correctly labeled with the 
+values 0 and 1, respectively, which is probably what you expected.
+Listing 3.2 displays the contents of sklearn_tree3.py that extends 
+the code in Listing 3.1 by adding a third label, and also by predicting the 
+label of three points instead of two points in the Euclidean plane (the modi-
+fications are shown in bold).
+Listing 3.2: sklearn_tree3.py
+from sklearn import tree
+# X = pairs of 2D points and Y = the class of each 
+point
+X = [[0, 0], [1, 1], [2,2]]
+Y = [0, 1, 2]
+tree_clf = tree.DecisionTreeClassifier()
+tree_clf = tree_clf.fit(X, Y)
+#predict the class of samples:
+print("predict class of [-1., -1.]:")
+print(tree_clf.predict([[-1., -1.]]))
+
+------------------------------------------------------------
+CHUNK ID: chunk_2952
+PAGE: 132
+CHUNK POSITION: 1
+------------------------------------------------------------
+suited for image classification, along with other use cases, such as audio and 
+NLP (Natural Language Processing).
+Although MLPs were successfully used for image recognition, they do not 
+scale well because every pair of adjacent layers is fully connected, which in turn 
+can result in massive neural networks. For large images (or other large inputs) 
+the complexity becomes significant and adversely affects performance.
+Figure 4.4 displays the contents of a CNN (there are many variations: 
+this is simply one example).
+FIGURE 4.4 An Example of a CNN.
+
+------------------------------------------------------------
+CHUNK ID: chunk_3086
+PAGE: 187
+CHUNK POSITION: 0
+------------------------------------------------------------
+168 • ArtificiAl intelligence, MAchine leArning, Deep leArning
+of ten documents (real documents, not the toy documents we used 
+earlier). The word the occurs frequently in English sentences, but it 
+does not provide any indication of the topics in any of the documents.  
+On the other hand, if you determine that the word universe appears 
+multiple times in a single document, this information can provide  
+some indication of the theme of that document, and with the help 
+of NLP techniques, assist in determining the topic (or topics) in that  
+document. 
+What Are Word Embeddings?
+An embedding is a fixed-length vector to encode and represent an entity 
+(document, sentence, word, graph). Each word is represented by a real-
+valued vector, which can result in hundreds of dimensions. Furthermore,
+
+------------------------------------------------------------
+CHUNK ID: chunk_3210
+PAGE: 237
+CHUNK POSITION: 0
+------------------------------------------------------------
+218 • ArtificiAl intelligence, MAchine leArning, Deep leArning
+The first part of this appendix briefly discusses some TF 2 features and 
+some of the tools that are included under the TF 2 umbrella. The second 
+section of this appendix shows you how to write TF 2 code involving TF 
+constants and TF variables.
+The third section digresses a bit: you will learn about the new TF 2 
+Python function decorator @tf.function that is used in many code 
+samples in this chapter. Although this decorator is not always required, it’s 
+important to become comfortable with this feature, and there are some 
+nonintuitive caveats regarding its use that are discussed in this section.
+The fourth section of this appendix shows you how to perform typical
+
+------------------------------------------------------------
+CHUNK ID: b258d341c5c914eacb8015c592a59a4039021e30f188ed2374a94ca6c674c34c_746
+PAGE: 286
+CHUNK POSITION: 746
+------------------------------------------------------------
+5 -0.4949 -1.6497 -1.0846 NaN
+6 -1.0476 -0.7486 -0.8055 NaN
+7     NaN     NaN     NaN NaN
+8     NaN     NaN     NaN NaN
+9     NaN     NaN     NaN NaN
+The essence of Listing C.2 involves initializing the DataFrames df1 
+and df2, and then defining the DataFrame df3 as the sum of df1 and 
+df2. The output from Listing C.2 is here:
+Keep in mind that the default behavior for operations involving  
+a DataFrame and Series is to align the Series index on the 
+DataFrame columns; this results in a row-wise output. Here is a simple 
+illustration:
+names = pd.Series(['SF', 'San Jose', 'Sacramento'])
+sizes = pd.Series([852469, 1015785, 485199])
+df =  pd.DataFrame({ 'Cities': names, 'Size': sizes })
+
+------------------------------------------------------------
+CHUNK ID: b258d341c5c914eacb8015c592a59a4039021e30f188ed2374a94ca6c674c34c_877
+PAGE: 338
+CHUNK POSITION: 877
+------------------------------------------------------------
+Index • 319
+Unsupervised learning, 25–26, 27
+Use cases, TensorFlow 2 (TF 2), 220
+Utilities application, xviii
+V
+VAE-GAN model, 157
+VAEs. See Variational Autoencoders
+Vanishing gradient problem, 101, 102
+Vanishing gradient scenario, 130
+Variable
+TensorFlow 2, 225, 227–229
+tree_clf, 69
+Variable selection, 30
+Variable subset selection, 30
+Variance, 36, 40
+error due to, 36
+as measure of information, 33
+of random variable, 33
+Variational autoencoder, 150–151
+Variational Autoencoders (VAEs), 99
+W
+watch() method, 255
+Weak artificial intelligence approach, 4–5
+Weighted sum, 105
+Weizenbaum, Joseph, 14–15
+while loop, 239–240
+Winograd, Terry, 15–16
+with statements, 254, 255
+Word embedding algorithms, 168–169
+Wrapper strategy, 31
+X
+XCON, 12
+XOR function, 89, 96–98, 110, 113
+Z
+
+============================================================
+DOCUMENT: Deep+Learning+Ian+Goodfellow.pdf
+QUALIFYING CHUNKS: 2145
+
+------------------------------------------------------------
+CHUNK ID: chunk_3
+PAGE: 4
+CHUNK POSITION: 0
+------------------------------------------------------------
+CONTENTS
+3.2RandomVariables. . . . .. . . . . . . .. . . . . . . . .. . . .56
+3.3ProbabilityDistributions. . . . . . . . .. . . . . . . .. . . . . .56
+3.4MarginalProbability. . . . . . . . .. . . . . . . . .. . . . . . .58
+3.5ConditionalProbability. .. . . . . . . .. . . . . . . .. . . . .59
+3.6TheChainRuleofConditionalProbabilities. . . . . . . . .. . .59
+3.7IndependenceandConditionalIndependence. . . . . . . . .. . .60
+3.8Expectation,VarianceandCovariance. . . . . . . . . .. . . . .60
+3.9CommonProbabilityDistributions. . . . . . . . . . . . . . .. .62
+3.10UsefulPropertiesofCommonFunctions. . .. . . . . . . . .. .67
+3.11Bayes’Rule. . . . . . . . . .. . . . . . . .. . . . . . . .. . . .70
+3.12TechnicalDetailsofContinuousVariables. . . . . .. . . . . . .71
+
+------------------------------------------------------------
+CHUNK ID: chunk_391
+PAGE: 135
+CHUNK POSITION: 2
+------------------------------------------------------------
+all.Thisunderﬁtsbecauseitcanonlyrepresentaconstantfunction. Witha(Center)
+mediumvalueof,thelearningalgorithmrecoversacurvewiththerightgeneralshape.λ
+Eventhoughthemodeliscapableofrepresentingfunctionswithmuchmorecomplicated
+shape,weightdecayhasencouragedittouseasimplerfunctiondescribedbysmaller
+coeﬃcients. Withweightdecayapproachingzero(i.e.,usingtheMoore-Penrose(Right)
+pseudoinversetosolvetheunderdeterminedproblemwithminimalregularization),the
+degree-9polynomialoverﬁtssigniﬁcantly,aswesawinﬁgure.5.2
+119
+
+------------------------------------------------------------
+CHUNK ID: chunk_768
+PAGE: 253
+CHUNK POSITION: 0
+------------------------------------------------------------
+CHAPTER7.REGULARIZATIONFORDEEPLEARNING
+Fromthepointofviewoflearningviamaximizationwithrespecttow,wecan
+ignorethe termsbecausetheydonotdependon.log log2α− w
+7.2NormPenaltiesasConstrainedOptimization
+Considerthecostfunctionregularizedbyaparameternormpenalty:
+˜J , J , α.(;θXy) = (;θXy)+Ω()θ (7.25)
+Recallfromsectionthatwecanminimizeafunctionsubjecttoconstraints4.4
+byconstructingageneralizedLagrangefunction,consistingoftheoriginalobjective
+functionplusasetofpenalties.Eachpenaltyisaproductbetweenacoeﬃcient,
+calledaKarush–Kuhn–Tucker(KKT)multiplier,andafunctionrepresenting
+whethertheconstraintissatisﬁed.IfwewantedtoconstrainΩ(θ)tobelessthan
+someconstant,wecouldconstructageneralizedLagrangefunctionk
+L −( ; ) = (; )+(Ω()θ,αXy, JθXy, αθ k.) (7.26)
+Thesolutiontotheconstrainedproblemisgivenby
+
+------------------------------------------------------------
+CHUNK ID: chunk_1130
+PAGE: 363
+CHUNK POSITION: 0
+------------------------------------------------------------
+CHAPTER9.CONVOLUTIONALNETWORKS
+saysthatthefunctionthelayershouldlearncontainsonlylocalinteractionsandis
+equivarianttotranslation.Likewise,theuseofpoolingisaninﬁnitelystrongprior
+thateachunitshouldbeinvarianttosmalltranslations.
+Ofcourse,implementingaconvolutionalnetasafullyconnectednetwithan
+inﬁnitelystrongpriorwouldbeextremelycomputationallywasteful.Butthinking
+ofaconvolutionalnetasafullyconnectednetwithaninﬁnitelystrongpriorcan
+giveussomeinsightsintohowconvolutionalnetswork.
+Onekeyinsightisthatconvolutionandpoolingcancauseunderﬁtting.Like
+anyprior,convolutionandpoolingareonlyusefulwhentheassumptionsmade
+bythepriorarereasonablyaccurate.Ifataskreliesonpreservingprecisespatial
+information,thenusingpoolingonallfeaturescanincreasethetrainingerror.
+
+------------------------------------------------------------
+CHUNK ID: chunk_1502
+PAGE: 474
+CHUNK POSITION: 1
+------------------------------------------------------------
+computervisionapplications,moreadvancedtransformationsarecommonlyused
+fordatasetaugmentation.Theseschemesincluderandomperturbationofthe
+colorsinanimage( ,)andnonlineargeometricdistortionsofKrizhevskyetal.2012
+theinput( ,).LeCunetal.1998b
+12.3SpeechRecognition
+Thetaskofspeechrecognitionistomapanacousticsignalcontainingaspoken
+naturallanguageutteranceintothecorrespondingsequenceofwordsintendedby
+thespeaker.LetX= (x(1),x(2),...,x()T)denotethesequenceofacousticinput
+vectors(traditionallyproducedbysplittingtheaudiointo20msframes).Most
+speechrecognitionsystemspreprocesstheinputusingspecializedhand-designed
+features,butsome( ,)deeplearningsystemslearnfeaturesJaitlyandHinton2011
+fromrawinput.Lety= (y1,y2,...,yN)denotethetargetoutputsequence(usually
+
+------------------------------------------------------------
+CHUNK ID: chunk_1861
+PAGE: 581
+CHUNK POSITION: 0
+------------------------------------------------------------
+CHAPTER16.STRUCTUREDPROBABILISTICMODELSFORDEEPLEARNING
+redundantbytheconstraintthatthesumoftheprobabilitiesbe1).Ifinstead,we
+onlymakeatableforeachoftheconditionalprobabilitydistributions,thenthe
+distributionovert0requires99values,thetabledeﬁningt1givent0requires9900
+values,andsodoesthetabledeﬁningt2givent1.Thiscomestoatotalof19,899
+values.Thismeansthatusingthedirectedgraphicalmodelreducedournumberof
+parametersbyafactorofmorethan50!
+Ingeneral,tomodelndiscretevariableseachhavingkvalues,thecostofthe
+singletableapproachscaleslikeO(kn),aswehaveobservedbefore.Nowsuppose
+webuildadirectedgraphicalmodeloverthesevariables. Ifmisthemaximum
+numberofvariablesappearing(oneithersideoftheconditioningbar)inasingle
+conditionalprobabilitydistribution,thenthecostofthetablesforthedirected
+
+------------------------------------------------------------
+CHUNK ID: chunk_2230
+PAGE: 697
+CHUNK POSITION: 1
+------------------------------------------------------------
+componentthatcanappearintheinputwhenhi= 1.Thecorrespondingspike
+variablehidetermineswhetherthatcomponentispresentatall.Thecorresponding
+slabvariablesideterminestheintensityofthatcomponent,ifitispresent.When
+aspikevariableisactive,thecorrespondingslabvariableaddsvariancetothe
+inputalongtheaxisdeﬁnedbyW:,i.Thisallowsustomodelthecovarianceofthe
+inputs.Fortunately,contrastivedivergenceandpersistentcontrastivedivergence
+withGibbssamplingarestillapplicable.Thereisnoneedtoinvertanymatrix.
+Formally,thessRBMmodelisdeﬁnedviaitsenergyfunction:
+Ess( ) =xsh,,−
+
+i
+xW:,isihi+1 2x
+
+Λ+
+
+i
+Φihi
+
+x (20.50)
++1 2  i αis2 i−  i αiµisihi−  i bihi+  i αiµ2 ihi,(20.51)
+wherebiistheoﬀsetofthespikehiandΛisadiagonalprecisionmatrixonthe
+observationsx.Theparameterαi>0isascalarprecisionparameterforthe
+
+------------------------------------------------------------
+CHUNK ID: chunk_2584
+PAGE: 801
+CHUNK POSITION: 0
+------------------------------------------------------------
+INDEX
+Transpose,,xii32
+Triangleinequality,38
+Triangulatedgraph,seechordalgraph
+Trigram,458
+Unbiased,123
+Undirectedgraphicalmodel,,76503
+Undirectedmodel,562
+Uniformdistribution,56
+Unigram,458
+Unitnorm,40
+Unitvector,40
+Universalapproximationtheorem,196
+Universalapproximator,549
+Unnormalizedprobabilitydistribution,563
+Unsupervisedlearning,,104144
+Unsupervisedpretraining,,456524
+V-structure,seeexplainingaway
+V1,362
+VAE,seevariationalautoencoder
+Vapnik-Chervonenkisdimension,113
+Variance,,,xiii60227
+Variationalautoencoder,,683690
+Variationalderivatives,seefunctionalderiva-
+tives
+Variationalfreeenergy,seeevidencelower
+bound
+VCdimension,seeVapnik-Chervonenkisdi-
+mension
+Vector,,,xixii31
+Virtualadversarialexamples,266
+Visiblelayer,6
+Volumetricdata,357
+Wake-sleep,,646655
+Weightdecay,,,,117176229428
+
+============================================================
+DOCUMENT: research paper.pdf
+QUALIFYING CHUNKS: 68
+
+------------------------------------------------------------
+CHUNK ID: chunk_3465
+PAGE: 1
+CHUNK POSITION: 0
+------------------------------------------------------------
+Research Paper on Artificial Intelligence & 
+Machine Learning 
+1P.Raghawa 2K.Sathwik ,3D.Sheshank,4G.Pradeep,5A.Nagamalleswra Rao 
+#1,2,3&4 First Year Students, Department of Computer Science(IT), Sree Dattha 
+Institute of Engineering and Science, Sheriguda (V), Ibrahmipatnam(M), 
+RangaReddy (D), Telangana - 501510. 
+#5Associate Professor, Department of Computer Science, Sree Dattha Institute of 
+engineering and science, Sheriguda (V), Ibrahmipatnam(M), RangaReddy(D), 
+Telangana - 501510. 
+Abstract 
+Artificial Intelligence (AI) and Machine Learning (ML) represent a paradigm 
+shift in the way technology interacts with human society. AI broadly refers to the 
+capability of machines to mimic intelligent human behavior such as reasoning,
+
+------------------------------------------------------------
+CHUNK ID: chunk_3472
+PAGE: 2
+CHUNK POSITION: 2
+------------------------------------------------------------
+machines to improve their performance over time based on data without being 
+explicitly programmed. ML is the driving engine behind many modern AI 
+applications and is responsible for significant advancements in fields like speech 
+recognition, image analysis, and predictive analytics. 
+The relevance of AI and ML is underscored by their vast range of applications. In 
+healthcare, they are used for disease prediction, personalized treatment, and 
+robotic surgeries. In the finance sector, they power fraud detection systems and 
+automated trading. Educational platforms employ AI to provide personalized 
+learning paths, while industries use it to optimize supply chains, automate 
+manufacturing, and enhance customer service. Governments are leveraging AI to
+
+------------------------------------------------------------
+CHUNK ID: ff1500e7b28996cf5a8df8674995706b0bf3a9379c88eb3085d99cdd984e16c8_11
+PAGE: 3
+CHUNK POSITION: 11
+------------------------------------------------------------
+like robotics and natural language processing.   
+ 
+ Fig 2:Artificial Intelligence 
+1.2 MACHINE LEARNING (ML) 
+ML is a subset of AI that focuses on algorithms and statistical models that enable 
+systems to improve their performance on a task with experience (i.e., data). 
+Instead of being explicitly programmed, ML models learn patterns and make 
+predictions or decisions based on data. 
+1.3 NEURAL NETWORK 
+These are computing systems inspired by the biological neural networks in human 
+brains. They consist of layers of interconnected nodes (neurons) and are capable 
+of learning complex patterns. Neural networks are the building blocks of deep 
+learning. 
+International journal of Engineering sciences and Advanced Technology Vol 25 Issue 07, July, 2025
+
+------------------------------------------------------------
+CHUNK ID: chunk_3486
+PAGE: 7
+CHUNK POSITION: 3
+------------------------------------------------------------
+concerns about bias embedded in AI systems. Floridi et al. (2018) emphasize the 
+ethical implications of autonomous decision-making and the need for 
+transparency and accountability. 
+Overall, the existing literature confirms that while AI and ML offer enormous 
+promise, their integration into society must be guided by ethical principles, policy 
+frameworks, and inclusive design to ensure positive outcomes for all. 
+3. Methodology 
+This research employs a mixed-methods approach, integrating both qualitative 
+and quantitative strategies to analyze the role, impact, and perception of 
+Artificial Intelligence and Machine Learning in contemporary society. 
+3.1 Research Design 
+The study is divided into two phases: 
+Secondary Research: A comprehensive review of existing academic literature,
+
+------------------------------------------------------------
+CHUNK ID: chunk_3490
+PAGE: 8
+CHUNK POSITION: 2
+------------------------------------------------------------
+Intelligence (AI) and Machine Learning (ML) among the general public. 
+4.1 Awareness and Understanding 
+The survey revealed that 76% of the participants were familiar with the term Artificial 
+Intelligence, whereas only 58% reported awareness of Machine Learning. This 
+discrepancy indicates a general tendency to associate AI with more visible consumer 
+applications, while ML is often misunderstood or less recognized due to its more 
+technical nature. 
+International journal of Engineering sciences and Advanced Technology Vol 25 Issue 07, July, 2025
+ ISSN:2250-3676 https://ijesat.com/ Page 374 of 379
+
+------------------------------------------------------------
+CHUNK ID: ff1500e7b28996cf5a8df8674995706b0bf3a9379c88eb3085d99cdd984e16c8_29
+PAGE: 10
+CHUNK POSITION: 29
+------------------------------------------------------------
+These results align with global discussions on AI ethics and the urgent need for 
+transparent, accountable systems. 
+4.4 Desire for Learning and Upskilling 
+An encouraging 88% of respondents expressed a willingness to learn more about AI 
+and ML through online platforms or workshops. This indicates high public interest and 
+a positive attitude toward technological upskilling, especially among students and 
+early-career professionals. 
+4.5 Cross-Sectional Trends 
+The survey revealed a few key trends: 
+● Students are more enthusiastic about AI's potential, but lack structured educational 
+exposure. 
+● Working professionals showed concern over job security but also saw AI as a tool for 
+increased productivity.
+
+------------------------------------------------------------
+CHUNK ID: ff1500e7b28996cf5a8df8674995706b0bf3a9379c88eb3085d99cdd984e16c8_35
+PAGE: 11
+CHUNK POSITION: 35
+------------------------------------------------------------
+521(7553), 436–444. 
+A comprehensive review of deep learning architectures and their transformative 
+impact on computer vision, speech recognition, and NLP. 
+4. Russell, S., & Norvig, P. (2021). Artificial Intelligence: A Modern Approach 
+(4th ed.). Pearson Education. 
+5. Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT 
+Press. 
+A key reference on deep learning theory and practice, including neural 
+networks, optimization techniques, and generative models. 
+International journal of Engineering sciences and Advanced Technology Vol 25 Issue 07, July, 2025
+ ISSN:2250-3676 https://ijesat.com/ Page 377 of 379
+
+------------------------------------------------------------
+CHUNK ID: ff1500e7b28996cf5a8df8674995706b0bf3a9379c88eb3085d99cdd984e16c8_40
+PAGE: 13
+CHUNK POSITION: 40
+------------------------------------------------------------
+Science, Sheriguda, Ibrahimpatnam, India-501 510. Scored 
+9.0\10 in X standard,910 marks out of 1000 in Inter MPC 
+and 7.71 CGPA In Engineering. Rresearch interests are 
+Information Technology and Software Engineering. Goal 
+is to become a Software Engineer. 
+ 
+ 
+Author 5 : Dr.A.Nagamalleswara Rao is working as an 
+Associate Professor in the Department of Computer 
+Science Engineering at Sree Dattha Institute of 
+Engineering and Science. He is dedicated to teaching and 
+mentoring students in his field. The institute is located in 
+Sheriguda(v), Ibrahimpatnam(m), RangaReddy (D), 
+Telangana - 501510, and is known for its commitment to 
+academic excellence. 
+ 
+ 
+International journal of Engineering sciences and Advanced Technology Vol 25 Issue 07, July, 2025

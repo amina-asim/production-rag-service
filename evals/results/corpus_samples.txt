@@ -1,0 +1,286 @@
+RAG CORPUS INSPECTION REPORT
+============================================================
+Total indexed chunks: 4428
+Total indexed documents: 3
+
+============================================================
+DOCUMENT: DL_and_ML.pdf.pdf
+TOTAL CHUNKS: 1758
+
+------------------------------------------------------------
+CHUNK ID: chunk_2586
+FILE HASH: Legacy/Unknown
+PAGE: 2
+CHUNK POSITION: 0
+------------------------------------------------------------
+ArtificiAl intelligence 
+MAchine leArning 
+And 
+deep leArning
+
+------------------------------------------------------------
+CHUNK ID: chunk_2806
+FILE HASH: Legacy/Unknown
+PAGE: 81
+CHUNK POSITION: 1
+------------------------------------------------------------
+issue that can arise with the data in datasets, and how to rectify them.
+In addition, you also learned about linear regression, along with a brief 
+description of how to calculate a best-fitting line for a dataset of values 
+in the Euclidean plane. You saw how to perform linear regression using 
+NumPy in order to initialize arrays with data values, along with a “perturba-
+tion” technique that introduces some randomness for the y values. This 
+technique is useful because you will know the correct values for the slope 
+and y-intercept of the best-fitting line, which you can then compare with 
+the trained values.
+You then learned how to perform linear regression in code samples that 
+involve Keras. In addition, you saw how to use Matplotlib in order to dis -
+
+------------------------------------------------------------
+CHUNK ID: chunk_3026
+FILE HASH: Legacy/Unknown
+PAGE: 163
+CHUNK POSITION: 2
+------------------------------------------------------------
+[[-1.0492262 , -0.1059267 , -0.27163735, 
+-0.64399946,  0.06018598],
+    [-0.7445494 ,  0.00723887, -0.11805946, 
+-0.26550752,  0.21816696],
+    [-1.4126835 ,  0.05187892, -0.07408151, 
+-0.66379607,  0.1348486 ],
+    [-0.5987958 ,  0.24536057, -0.16916996, 
+-0.8177415 ,  0.39747238]],
+
+------------------------------------------------------------
+CHUNK ID: b258d341c5c914eacb8015c592a59a4039021e30f188ed2374a94ca6c674c34c_658
+FILE HASH: b258d341c5c914eacb8015c592a59a4039021e30f188ed2374a94ca6c674c34c
+PAGE: 250
+CHUNK POSITION: 658
+------------------------------------------------------------
+introDuction to tf 2 • 231
+Listing B.6 contains simple lists and tuples of various dimensions in 
+order to illustrate the difference between these two types. The output from 
+Listing B.6 is probably what you would expect, and it’s shown here:
+list_0: []
+tuple_0: ()
+list_1: [3]
+tuple_1: 3
+list_2: [3, 7]
+tuple_2: (3, 7)
+any_list1: [None]
+any_tuple1: None
+any_list2: [7, None]
+any_list3: [7, None, None]
+Variables in TF 2 (Revisited)
+TF 2 variables can be updated during backward error propagation. TF 2 
+variables can also be saved and then restored at a later point in time. The 
+following list contains some properties of TF 2 variables:
+•	 The initial value is optional
+•	 They must be initialized before graph execution
+list_1 = [3]
+tuple_1 = (3)
+print("list_1:",list_1)
+print("tuple_1:",tuple_1)
+
+------------------------------------------------------------
+CHUNK ID: b258d341c5c914eacb8015c592a59a4039021e30f188ed2374a94ca6c674c34c_878
+FILE HASH: b258d341c5c914eacb8015c592a59a4039021e30f188ed2374a94ca6c674c34c
+PAGE: 338
+CHUNK POSITION: 878
+------------------------------------------------------------
+with statements, 254, 255
+Word embedding algorithms, 168–169
+Wrapper strategy, 31
+X
+XCON, 12
+XOR function, 89, 96–98, 110, 113
+Z
+Zero probability problem, 78
+
+============================================================
+DOCUMENT: Deep+Learning+Ian+Goodfellow.pdf
+TOTAL CHUNKS: 2586
+
+------------------------------------------------------------
+CHUNK ID: chunk_0
+FILE HASH: Legacy/Unknown
+PAGE: 2
+CHUNK POSITION: 0
+------------------------------------------------------------
+DeepLearning
+IanGoodfellow
+YoshuaBengio
+AaronCourville
+
+------------------------------------------------------------
+CHUNK ID: chunk_646
+FILE HASH: Legacy/Unknown
+PAGE: 215
+CHUNK POSITION: 2
+------------------------------------------------------------
+anyfunction,butthelayermaybeinfeasiblylargeandmayfailtolearnand
+generalizecorrectly.Inmanycircumstances,usingdeepermodelscanreducethe
+numberofunitsrequiredtorepresentthedesiredfunctionandcanreducethe
+amountofgeneralizationerror.
+Thereexistfamiliesoffunctionswhichcanbeapproximatedeﬃcientlybyan
+architecturewithdepthgreaterthansomevalued,butwhichrequireamuchlarger
+modelifdepthisrestrictedtobelessthanorequaltod.Inmanycases,thenumber
+ofhiddenunitsrequiredbytheshallowmodelisexponentialinn. Suchresults
+wereﬁrstprovedformodelsthatdonotresemblethecontinuous,diﬀerentiable
+neuralnetworksusedformachinelearning,buthavesincebeenextendedtothese
+models.Theﬁrstresultswereforcircuitsoflogicgates( ,).LaterHåstad1986
+workextendedtheseresultstolinearthresholdunitswithnon-negativeweights
+
+------------------------------------------------------------
+CHUNK ID: chunk_1292
+FILE HASH: Legacy/Unknown
+PAGE: 413
+CHUNK POSITION: 2
+------------------------------------------------------------
+presentedinearliersectionsofthischapteristhatthelengthsnxandnycan
+varyfromeachother,whilepreviousarchitecturesconstrainednx=ny=τ.Ina
+sequence-to-sequencearchitecture,thetwoRNNsaretrainedjointlytomaximize
+theaverageoflogP(y(1),...,y(ny)|x(1),...,x(nx))overallthepairsofxandy
+sequencesinthetrainingset.ThelaststatehnxoftheencoderRNNistypically
+usedasarepresentationCoftheinputsequencethatisprovidedasinputtothe
+decoderRNN.
+IfthecontextCisavector,thenthedecoderRNNissimplyavector-to-
+sequenceRNNasdescribedinsection.Aswehaveseen,thereareatleast10.2.4
+twowaysforavector-to-sequenceRNNtoreceiveinput.Theinputcanbeprovided
+astheinitialstateoftheRNN,ortheinputcanbeconnectedtothehiddenunits
+ateachtimestep.Thesetwowayscanalsobecombined.
+Thereisnoconstraintthattheencodermusthavethesamesizeofhiddenlayer
+
+------------------------------------------------------------
+CHUNK ID: chunk_1939
+FILE HASH: Legacy/Unknown
+PAGE: 603
+CHUNK POSITION: 2
+------------------------------------------------------------
+werenotspeciﬁedbythedesigner.Later,insection,wewillrevisittheRBM20.2
+inmoredetail.
+ThecanonicalRBMisanenergy-basedmodelwithbinaryvisibleandhidden
+units.Itsenergyfunctionis
+E,(vh b) = −v c−h v−Wh, (16.10)
+whereb,c,andWareunconstrained,real-valued,learnableparameters.Wecan
+seethatthemodelisdividedintotwogroupsofunits:vandh,andtheinteraction
+betweenthemisdescribedbyamatrixW.Themodelisdepictedgraphically
+inﬁgure.Asthisﬁguremakesclear,animportantaspectofthismodelis16.14
+thattherearenodirectinteractionsbetweenanytwovisibleunitsorbetweenany
+twohiddenunits(hencethe“restricted,”ageneralBoltzmannmachinemayhave
+arbitraryconnections).
+TherestrictionsontheRBMstructureyieldtheniceproperties
+p( ) = Πhv| ip(hi|v) (16.11)
+587
+
+------------------------------------------------------------
+CHUNK ID: chunk_2585
+FILE HASH: Legacy/Unknown
+PAGE: 801
+CHUNK POSITION: 1
+------------------------------------------------------------
+mension
+Vector,,,xixii31
+Virtualadversarialexamples,266
+Visiblelayer,6
+Volumetricdata,357
+Wake-sleep,,646655
+Weightdecay,,,,117176229428
+Weightspacesymmetry,282
+Weights,,15106
+Whitening,452
+Wikibase,479
+Wikibase,479
+Wordembedding,460
+Word-sensedisambiguation,480
+WordNet,479
+Zero-datalearning,seezero-shotlearning
+Zero-shotlearning,534
+785
+
+============================================================
+DOCUMENT: research paper.pdf
+TOTAL CHUNKS: 84
+
+------------------------------------------------------------
+CHUNK ID: chunk_3465
+FILE HASH: Legacy/Unknown
+PAGE: 1
+CHUNK POSITION: 0
+------------------------------------------------------------
+Research Paper on Artificial Intelligence & 
+Machine Learning 
+1P.Raghawa 2K.Sathwik ,3D.Sheshank,4G.Pradeep,5A.Nagamalleswra Rao 
+#1,2,3&4 First Year Students, Department of Computer Science(IT), Sree Dattha 
+Institute of Engineering and Science, Sheriguda (V), Ibrahmipatnam(M), 
+RangaReddy (D), Telangana - 501510. 
+#5Associate Professor, Department of Computer Science, Sree Dattha Institute of 
+engineering and science, Sheriguda (V), Ibrahmipatnam(M), RangaReddy(D), 
+Telangana - 501510. 
+Abstract 
+Artificial Intelligence (AI) and Machine Learning (ML) represent a paradigm 
+shift in the way technology interacts with human society. AI broadly refers to the 
+capability of machines to mimic intelligent human behavior such as reasoning,
+
+------------------------------------------------------------
+CHUNK ID: chunk_3477
+FILE HASH: Legacy/Unknown
+PAGE: 3
+CHUNK POSITION: 3
+------------------------------------------------------------
+learning. 
+International journal of Engineering sciences and Advanced Technology Vol 25 Issue 07, July, 2025
+ ISSN:2250-3676 https://ijesat.com/ Page 369 of 379
+
+------------------------------------------------------------
+CHUNK ID: ff1500e7b28996cf5a8df8674995706b0bf3a9379c88eb3085d99cdd984e16c8_19
+FILE HASH: ff1500e7b28996cf5a8df8674995706b0bf3a9379c88eb3085d99cdd984e16c8
+PAGE: 7
+CHUNK POSITION: 19
+------------------------------------------------------------
+In the realm of deep learning, Ian Goodfellow, Yoshua Bengio, and Aaron 
+Courville’s Deep Learning offers a detailed exploration of advanced neural 
+architectures, such as convolutional neural networks (CNNs), recurrent neural 
+networks (RNNs), and generative adversarial networks (GANs). These models 
+have revolutionized areas like image classification, speech synthesis, and 
+machine translation. 
+Recent scholarly articles published in journals like IEEE Transactions on Neural 
+Networks, ACM Computing Surveys, and Nature Machine Intelligence have 
+expanded upon these fundamentals. They examine cutting-edge research on 
+explainable AI (XAI), transfer learning, and reinforcement learning, as well as 
+domain-specific applications like AI in drug discovery, climate modeling, and
+
+------------------------------------------------------------
+CHUNK ID: ff1500e7b28996cf5a8df8674995706b0bf3a9379c88eb3085d99cdd984e16c8_30
+FILE HASH: ff1500e7b28996cf5a8df8674995706b0bf3a9379c88eb3085d99cdd984e16c8
+PAGE: 10
+CHUNK POSITION: 30
+------------------------------------------------------------
+exposure. 
+● Working professionals showed concern over job security but also saw AI as a tool for 
+increased productivity. 
+● Female respondents expressed slightly more concern regarding AI ethics and privacy 
+than male respondents, though usage patterns were similar across genders. 
+4.6 Interpretation and Comparison with Literature 
+These findings are consistent with global trends outlined in the literature review. For 
+instance: 
+● A 2020 study by McKinsey Global Institute found similar trust gaps in AI across 
+different demographics. 
+● The Indian government's AI strategy (NITI Aayog) also noted a growing divide 
+between AI availability and AI literacy—reflected here in the knowledge-use gap. 
+4.7 Summary of Key Findings 
+Parameter Result 
+AI Awareness 76% 
+ML Awareness 58%
+
+------------------------------------------------------------
+CHUNK ID: ff1500e7b28996cf5a8df8674995706b0bf3a9379c88eb3085d99cdd984e16c8_41
+FILE HASH: ff1500e7b28996cf5a8df8674995706b0bf3a9379c88eb3085d99cdd984e16c8
+PAGE: 13
+CHUNK POSITION: 41
+------------------------------------------------------------
+academic excellence. 
+ 
+ 
+International journal of Engineering sciences and Advanced Technology Vol 25 Issue 07, July, 2025
+ ISSN:2250-3676 https://ijesat.com/ Page 379 of 379

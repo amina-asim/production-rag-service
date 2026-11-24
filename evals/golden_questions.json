@@ -1,0 +1,203 @@
+
+[
+  {
+    "id": 1,
+    "category": "answerable",
+    "type": "direct",
+    "question": "Why is regularization used in machine learning models?",
+    "expected_answer": "Regularization limits model capacity by adding a parameter norm penalty to the objective function.",
+    "relevant_sources": [{"filename": "Deep+Learning+Ian+Goodfellow.pdf", "page": 246}]
+  },
+  {
+    "id": 2,
+    "category": "answerable",
+    "type": "direct",
+    "question": "What happens when the regularization hyperparameter alpha is set to zero?",
+    "expected_answer": "Setting alpha to zero results in no regularization.",
+    "relevant_sources": [{"filename": "Deep+Learning+Ian+Goodfellow.pdf", "page": 246}]
+  },
+  {
+    "id": 3,
+    "category": "answerable",
+    "type": "direct",
+    "question": "How does L1 regularization contribute to the gradient?",
+    "expected_answer": "Its contribution is a constant factor whose sign depends on the corresponding weight, rather than scaling linearly with each weight.",
+    "relevant_sources": [{"filename": "Deep+Learning+Ian+Goodfellow.pdf", "page": 251}]
+  },
+  {
+    "id": 4,
+    "category": "answerable",
+    "type": "direct",
+    "question": "What is the purpose of the parameter norm penalty in a regularized objective function?",
+    "expected_answer": "It limits the capacity of a model by adding a penalty term to the original objective function.",
+    "relevant_sources": [{"filename": "Deep+Learning+Ian+Goodfellow.pdf", "page": 246}]
+  },
+  {
+    "id": 5,
+    "category": "answerable",
+    "type": "direct",
+    "question": "What limitations of capsule networks are mentioned in the book?",
+    "expected_answer": "Capsule networks are more complex and more difficult to train than the alternative discussed.",
+    "relevant_sources": [{"filename": "DL_and_ML.pdf.pdf", "page": 136}]
+  },
+  {
+    "id": 6,
+    "category": "answerable",
+    "type": "direct",
+    "question": "What is the relationship between deep learning and neural networks?",
+    "expected_answer": "Deep learning is a subfield of machine learning that uses deep neural network architectures.",
+    "relevant_sources": [{"filename": "DL_and_ML.pdf.pdf", "page": 38}, {"filename": "DL_and_ML.pdf.pdf", "page": 117}]
+  },
+  {
+    "id": 7,
+    "category": "answerable",
+    "type": "direct",
+    "question": "Which architectures are given as examples of deep neural networks?",
+    "expected_answer": "Convolutional neural networks, recurrent neural networks, and LSTMs.",
+    "relevant_sources": [{"filename": "DL_and_ML.pdf.pdf", "page": 38}]
+  },
+  {
+    "id": 8,
+    "category": "answerable",
+    "type": "direct",
+    "question": "What kinds of tasks are convolutional neural networks suited for?",
+    "expected_answer": "CNNs are suited to image classification and can also be used in audio and natural language processing.",
+    "relevant_sources": [{"filename": "DL_and_ML.pdf.pdf", "page": 132}]
+  },
+  {
+    "id": 9,
+    "category": "answerable",
+    "type": "direct",
+    "question": "Which neural network architectures are being explored for identifying different types of sounds?",
+    "expected_answer": "CNNs are used for sound identification, while some companies are exploring RNNs and LSTMs.",
+    "relevant_sources": [{"filename": "DL_and_ML.pdf.pdf", "page": 145}]
+  },
+  {
+    "id": 10,
+    "category": "answerable",
+    "type": "direct",
+    "question": "How is AI used in healthcare according to the research paper?",
+    "expected_answer": "Healthcare applications include disease prediction, personalized treatment, and robotic surgeries.",
+    "relevant_sources": [{"filename": "research paper.pdf", "page": 2}]
+  },
+  {
+    "id": 11,
+    "category": "answerable",
+    "type": "direct",
+    "question": "What are two financial applications of AI and machine learning mentioned in the research paper?",
+    "expected_answer": "Fraud detection systems and automated trading.",
+    "relevant_sources": [{"filename": "research paper.pdf", "page": 2}]
+  },
+  {
+    "id": 12,
+    "category": "answerable",
+    "type": "direct",
+    "question": "How are AI technologies used in education and industry?",
+    "expected_answer": "Educational platforms use AI for personalized learning paths, while industries use it to optimize supply chains, automate manufacturing, and improve customer service.",
+    "relevant_sources": [{"filename": "research paper.pdf", "page": 2}]
+  },
+  {
+    "id": 13,
+    "category": "answerable",
+    "type": "direct",
+    "question": "How does the book define machine learning at a high level?",
+    "expected_answer": "Machine learning is a subset of AI that can solve tasks that are infeasible or too cumbersome with traditional programming languages.",
+    "relevant_sources": [{"filename": "DL_and_ML.pdf.pdf", "page": 43}]
+  },
+  {
+    "id": 14,
+    "category": "answerable",
+    "type": "direct",
+    "question": "What three main types of machine learning algorithms are listed in the book?",
+    "expected_answer": "Regression, classification, and clustering.",
+    "relevant_sources": [{"filename": "DL_and_ML.pdf.pdf", "page": 45}]
+  },
+  {
+    "id": 15,
+    "category": "answerable",
+    "type": "direct",
+    "question": "What percentage of survey participants were familiar with AI and what percentage were aware of machine learning?",
+    "expected_answer": "76% were familiar with AI, while 58% reported awareness of machine learning.",
+    "relevant_sources": [{"filename": "research paper.pdf", "page": 8}]
+  },
+  {
+    "id": 16,
+    "category": "answerable",
+    "type": "reworded_multipart",
+    "question": "Explain the difference between L1 regularization and the gradient behavior described for it. How does its contribution depend on the model weights?",
+    "expected_answer": "L1 regularization adds a penalty to the objective function. Its gradient contribution is a constant factor determined by the sign of each weight, rather than scaling linearly with the weight.",
+    "relevant_sources": [{"filename": "Deep+Learning+Ian+Goodfellow.pdf", "page": 251}]
+  },
+  {
+    "id": 17,
+    "category": "answerable",
+    "type": "reworded_multipart",
+    "question": "A company wants to identify sounds using deep learning. Which architectures does the book discuss for this purpose?",
+    "expected_answer": "CNNs can be used to identify different types of sounds, and RNNs and LSTMs are also being explored for this task.",
+    "relevant_sources": [{"filename": "DL_and_ML.pdf.pdf", "page": 145}]
+  },
+  {
+    "id": 18,
+    "category": "answerable",
+    "type": "reworded_multipart",
+    "question": "Compare the AI and ML awareness levels in the survey. What does the difference suggest?",
+    "expected_answer": "AI awareness was 76%, compared with 58% for ML. The paper suggests that AI is more familiar because of visible consumer applications, while ML is less recognized because of its technical nature.",
+    "relevant_sources": [{"filename": "research paper.pdf", "page": 8}]
+  },
+  {
+    "id": 19,
+    "category": "answerable",
+    "type": "reworded_multipart",
+    "question": "How did the research study collect information, and what were its primary and secondary research methods?",
+    "expected_answer": "The study used secondary research involving existing literature, government reports, and industry whitepapers, alongside primary research through a structured survey of respondents.",
+    "relevant_sources": [{"filename": "research paper.pdf", "page": 7}]
+  },
+  {
+    "id": 20,
+    "category": "answerable",
+    "type": "reworded_multipart",
+    "question": "Summarize the survey's findings about AI usage and trust in AI decisions.",
+    "expected_answer": "84% of participants regularly used at least one AI-powered application. Regarding AI decisions, 42% trusted them in routine or low-risk situations, 36% expressed concerns about critical applications, and 22% were unsure or skeptical.",
+    "relevant_sources": [{"filename": "research paper.pdf", "page": 9}]
+  },
+  {
+    "id": 21,
+    "category": "unanswerable",
+    "type": "abstention",
+    "question": "What exact learning rate was used to train the capsule network in the book's experiment?",
+    "expected_answer": "I could not find relevant information in the uploaded documents.",
+    "relevant_sources": []
+  },
+  {
+    "id": 22,
+    "category": "unanswerable",
+    "type": "abstention",
+    "question": "What is the current market share of ChatGPT in Pakistan?",
+    "expected_answer": "I could not find relevant information in the uploaded documents.",
+    "relevant_sources": []
+  },
+  {
+    "id": 23,
+    "category": "unanswerable",
+    "type": "abstention",
+    "question": "Which specific hospital in Islamabad currently uses an AI-powered diagnostic system?",
+    "expected_answer": "I could not find relevant information in the uploaded documents.",
+    "relevant_sources": []
+  },
+  {
+    "id": 24,
+    "category": "unanswerable",
+    "type": "abstention",
+    "question": "What exact mathematical architecture and routing-by-agreement equations were used in the capsule network implementation?",
+    "expected_answer": "I could not find relevant information in the uploaded documents.",
+    "relevant_sources": []
+  },
+  {
+    "id": 25,
+    "category": "unanswerable",
+    "type": "abstention",
+    "question": "What was the individual age, name, and occupation of each of the 50 survey participants?",
+    "expected_answer": "I could not find relevant information in the uploaded documents.",
+    "relevant_sources": []
+  }
+]
